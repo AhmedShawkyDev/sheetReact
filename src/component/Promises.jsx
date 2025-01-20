@@ -1,118 +1,109 @@
 const Promises = () => {
-  // setTimeout(() => {
-  //   document.getElementById("title1").classList.remove("hidden");
-  //   setTimeout(() => {
-  //     document.getElementById("title2").classList.remove("hidden");
-  //     setTimeout(() => {
-  //       document.getElementById("title3").classList.remove("hidden");
-  //       setTimeout(() => {
-  //         document.getElementById("title4").classList.remove("hidden");
-  //         setTimeout(() => {
-  //           document.getElementById("title5").classList.remove("hidden");
-  //         }, 5000);
-  //       }, 4000);
-  //     }, 3000);
-  //   }, 2000);
-  // }, 2000);
-
-  // let promise = new Promise((resolve, reject) => {
-  //   console.log("starting the async code");
-  //   isSuccess = true;
-  //   if (isSuccess) {
-  //     console.log("calling resolve");
-  //     resolve();
-  //   } else {
-  //     console.log("calling reject");
-  //     reject();
-  //   }
-  // });
-  // console.log("after the promise creation and before then and catch");
-  // promise
-  //   .then(() => {
-  //     console.log("calling Then");
-  //   })
-  //   .catch(() => {
-  //     console.log("error");
-  //   });
-  // console.log("after then and catch");
-
-  // new Promise((resolve, reject) => {
+  // new Promise((resolve) => {
   //   setTimeout(() => {
   //     document.getElementById("title1").classList.remove("hidden");
   //     resolve();
-  //   }, 1000);
+  //   }, 2000);
   // })
   //   .then(() => {
   //     return new Promise((resolve) => {
   //       setTimeout(() => {
   //         document.getElementById("title2").classList.remove("hidden");
   //         resolve();
-  //       }, 1000);
+  //       }, 2000);
   //     });
   //   })
   //   .then(() => {
-  //     console.log("the title is on screen");
+  //     return new Promise((resolve) => {
+  //       setTimeout(() => {
+  //         document.getElementById("title3").classList.remove("hidden");
+  //         resolve();
+  //       }, 2000);
+  //     });
+  //   })
+  //   .then(() => {
+  //     return new Promise((resolve) => {
+  //       setTimeout(() => {
+  //         document.getElementById("title4").classList.remove("hidden");
+  //         resolve();
+  //       }, 2000);
+  //     });
+  //   })
+  //   .then(() => {
+  //     return new Promise((resolve) => {
+  //       setTimeout(() => {
+  //         document.getElementById("title5").classList.remove("hidden");
+  //         resolve();
+  //       }, 2000);
+  //     });
+  //   })
+  //   .then(() => {
+  //     return new Promise((resolve) => {
+  //       setTimeout(() => {
+  //         document.getElementById("title6").classList.remove("hidden");
+  //         resolve();
+  //       }, 2000);
+  //     });
+  //   })
+  //   .then(() => {
+  //     return new Promise((resolve) => {
+  //       setTimeout(() => {
+  //         document.getElementById("title7").classList.remove("hidden");
+  //         resolve();
+  //       }, 2000);
+  //     });
+  //   })
+
+  //   .then(() => {
+  //     console.log("Come Here --------------------*");
   //   });
 
-  new Promise((resolve) => {
-    setTimeout(() => {
-      document.getElementById("title1").classList.remove("hidden");
-      resolve();
-    }, 2000);
-  })
-    .then(() => {
-      return new Promise((resolve) => {
-        setTimeout(() => {
-          document.getElementById("title2").classList.remove("hidden");
-          resolve();
-        }, 2000);
-      });
-    })
-    .then(() => {
-      return new Promise((resolve) => {
-        setTimeout(() => {
-          document.getElementById("title3").classList.remove("hidden");
-          resolve();
-        }, 2000);
-      });
-    })
-    .then(() => {
-      return new Promise((resolve) => {
-        setTimeout(() => {
-          document.getElementById("title4").classList.remove("hidden");
-          resolve();
-        }, 2000);
-      });
-    })
-    .then(() => {
-      return new Promise((resolve) => {
-        setTimeout(() => {
-          document.getElementById("title5").classList.remove("hidden");
-          resolve();
-        }, 2000);
-      });
-    })
-    .then(() => {
-      return new Promise((resolve) => {
-        setTimeout(() => {
-          document.getElementById("title6").classList.remove("hidden");
-          resolve();
-        }, 2000);
-      });
-    })
-    .then(() => {
-      return new Promise((resolve) => {
-        setTimeout(() => {
-          document.getElementById("title7").classList.remove("hidden");
-          resolve();
-        }, 2000);
-      });
-    })
-
-    .then(() => {
-      console.log("Come Here --------------------*");
+  /////////////////////////// with async//////////////////////////////////////////
+  const show = async () => {
+    await new Promise((resolve) => {
+      setTimeout(() => {
+        document.getElementById("title1").classList.remove("hidden");
+        resolve();
+      }, 1000);
     });
-
+    await new Promise((resolve) => {
+      setTimeout(() => {
+        document.getElementById("title2").classList.remove("hidden");
+        resolve();
+      }, 1000);
+    });
+    await new Promise((resolve) => {
+      setTimeout(() => {
+        document.getElementById("title3").classList.remove("hidden");
+        resolve();
+      }, 1000);
+    });
+    await new Promise((resolve) => {
+      setTimeout(() => {
+        document.getElementById("title4").classList.remove("hidden");
+        resolve();
+      }, 1000);
+    });
+    await new Promise((resolve) => {
+      setTimeout(() => {
+        document.getElementById("title5").classList.remove("hidden");
+        resolve();
+      }, 1000);
+    });
+    await new Promise((resolve) => {
+      setTimeout(() => {
+        document.getElementById("title6").classList.remove("hidden");
+        resolve();
+      }, 1000);
+    });
+    await new Promise((resolve) => {
+      setTimeout(() => {
+        document.getElementById("title7").classList.remove("hidden");
+        resolve();
+      }, 1000);
+    });
+  };
+  show();
   return (
     <div className="flex flex-col mt-4">
       <h1 id="title1" className="hidden bg-red-500 rounded-sm p-2 mt-2">
