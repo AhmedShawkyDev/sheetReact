@@ -2,9 +2,10 @@
 // import Show from "./Show";
 // import SideMenu from "./SideMenu";
 
-import Auth from "./Auth";
-import Signin from "./Signin";
-
+// import Auth from "./Auth";
+// import LoginSuccess from "./LoginSuccess";
+// import Signin from "./Signin";
+import Portal2 from "./Portal2";
 // import Async from "./Async";
 
 // import State from "./State";
@@ -38,7 +39,9 @@ export default function First() {
         {/* <Tessssssst /> */}
         {/* <Async /> */}
         {/* <Auth /> */}
-        <Signin />
+        {/* <Signin /> */}
+        {/* <LoginSuccess /> */}
+        <Portal2 />
       </div>
     </>
   );
