@@ -5,7 +5,9 @@
 // import Auth from "./Auth";
 // import LoginSuccess from "./LoginSuccess";
 // import Signin from "./Signin";
-import Portal2 from "./Portal2";
+// import PaginationPages from "./PaginationPages";
+import PaginationTitle from "./PaginationTitle";
+// import Portal2 from "./Portal2";
 // import Async from "./Async";
 
 // import State from "./State";
@@ -26,7 +28,7 @@ import Portal2 from "./Portal2";
 export default function First() {
   return (
     <>
-      <div className="flex justify-center gap-10">
+      <div className="">
         {/* <MainSide />
         <AppSideMenu />
         <Show /> */}
@@ -41,7 +43,8 @@ export default function First() {
         {/* <Auth /> */}
         {/* <Signin /> */}
         {/* <LoginSuccess /> */}
-        <Portal2 />
+        {/* <PaginationPages /> */}
+        <PaginationTitle />
       </div>
     </>
   );
