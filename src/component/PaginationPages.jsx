@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+// import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 // const PaginationPages = () => {
 //   const [num, setNum] = useState(1);
 //   const [cur, setCur] = useState(1);
@@ -63,26 +63,26 @@ const PaginationPages = ({ handlePagination }) => {
     { page: num + 5 },
     { page: num + 6 },
     { page: num + 7 },
-    { page: num + 8 },
   ];
-  const next = () => {
-    setNum(num + 1);
-  };
-  const prev = () => {
-    num > 1 && setNum(num - 1);
-  };
+  // const next = () => {
+  //   setNum(num + 1);
+  // };
+  // const prev = () => {
+  //   num > 1 && setNum(num - 1);
+  // };
   return (
     <div className="flex bg-white rounded-lg items-center justify-center mt-32 gap-1">
-      <button
+      {/* <button
         className="p-2 border-2 border-red-500 m-0 rounded-lg hover:bg-red-500 hover:text-white"
         onClick={() => {
           prev();
         }}
       >
         <FaArrowLeft className="my-1 " />
-      </button>
+      </button> */}
       {pages.map((pg, i) => (
         <button
+          key={i}
           className={`p-2 border-2 border-red-500 m-0 rounded-lg hover:bg-red-500 hover:text-white ${
             cur == pg.page && "bg-red-500 text-white"
           }`}
@@ -90,17 +90,16 @@ const PaginationPages = ({ handlePagination }) => {
             setCur(pg.page);
             handlePagination(e, i + 1);
           }}
-          key={i}
         >
           {pg.page}
         </button>
       ))}
-      <button
+      {/* <button
         className="p-2 border-2 border-red-500 m-0 rounded-lg hover:bg-red-500 hover:text-white"
         onClick={next}
       >
         <FaArrowRight className="my-1 " />
-      </button>
+      </button> */}
     </div>
   );
 };

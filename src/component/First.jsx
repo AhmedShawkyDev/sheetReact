@@ -6,7 +6,9 @@
 // import LoginSuccess from "./LoginSuccess";
 // import Signin from "./Signin";
 // import PaginationPages from "./PaginationPages";
-import PaginationTitle from "./PaginationTitle";
+// import PaginationTitle from "./PaginationTitle";
+// import PaginationPages2 from "./PaginationPages2";
+import PaginationTitle2 from "./PaginationTitle2";
 // import Portal2 from "./Portal2";
 // import Async from "./Async";
 
@@ -44,7 +46,8 @@ export default function First() {
         {/* <Signin /> */}
         {/* <LoginSuccess /> */}
         {/* <PaginationPages /> */}
-        <PaginationTitle />
+        {/* <PaginationPages2 /> */}
+        <PaginationTitle2 />
       </div>
     </>
   );
