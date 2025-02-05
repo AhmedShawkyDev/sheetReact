@@ -27,25 +27,29 @@
 //     return <SideMenu />;
 //   }
 
-import { useState } from "react";
+// import Arraymap from "./Arraymap";
+import ForLoop from "./ForLoop";
+
+// import { useState } from "react";
 
 // }
 export default function First() {
-  const [student, setStudent] = useState([]);
-  const [input, setInput] = useState("");
-  const [submitValue, setSubmitValue] = useState("");
-  const inputValue = (e) => {
-    setInput(e.target.value);
-  };
-  const submit = () => {
-    setSubmitValue(input);
-    setStudent([...student, input]);
-  };
+  // const [student, setStudent] = useState([]);
+  // const [input, setInput] = useState("");
+  // const [submitValue, setSubmitValue] = useState("");
+  // const inputValue = (e) => {
+  //   setInput(e.target.value);
+  // };
+  // const submit = () => {
+  //   setSubmitValue(input);
+  //   setStudent([...student, input]);
+  // };
 
-  const del = () => {
-    const deleted = student.pop();
-    setSubmitValue(deleted);
-  };
+  // const del = () => {
+  //   if (student.length > 0) {
+  //     setStudent(student.slice(0, -1));
+  //   }
+  // };
   // const copyStudent = [...student];
   // const deleted = copyStudent.pop();
   // console.log(deleted);
@@ -136,7 +140,7 @@ export default function First() {
   return (
     <>
       <div className="flex flex-col justify-center items-center gap-4 mt-56 ">
-        <input
+        {/* <input
           type="text"
           className="border-2 border-black rounded-md "
           value={input}
@@ -152,7 +156,7 @@ export default function First() {
         </button>
         <button onClick={del} className="bg-red-500 rounded-md p-2">
           Delete
-        </button>
+        </button> */}
         {/* <MainSide /> 
         <AppSideMenu />
         <Show /> */}
@@ -226,6 +230,8 @@ export default function First() {
         <h1 className="text-slate-500">
           Mod is : <span className="text-red-500">{Mod}</span>
         </h1> */}
+        {/* <Arraymap /> */}
+        <ForLoop />
       </div>
     </>
   );
