@@ -106,6 +106,7 @@ const Tessssssst = () => {
           <div>{day}</div>
           <div>{week}</div>
           <div>{month}</div>
+          get over here
         </div>
       </div>
       <div className="w-[1250px] h-[250px] bg-slate-500 flex justify-evenly">
