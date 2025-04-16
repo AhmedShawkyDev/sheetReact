@@ -1,5 +1,5 @@
 const javascript = () => {
-  return <div></div>;
+  return <div>Java Script</div>;
 };
 
 export default javascript;
