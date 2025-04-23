@@ -5,7 +5,7 @@ const Home = () => {
     <>
       {/* <Header /> */}
       <Index pageName="Home Page" mostafa="hello" color="red" good="true" />
-      <div className = "text-3xl">get over here ------</>
+      <div className = "text-3xl">get over here ------</div>
     </>
   );
 };
